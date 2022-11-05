@@ -4,7 +4,7 @@ import './Chart.css';
 
 const Chart = (props) => {
     const justValues = props.dataPoints.map(dataPoint => dataPoint.value);
-    const maxHeightValue = Math.max(...justValues) > .1 ? Math.max(...justValues) : .1;
+    const maxHeightValue = Math.max(...justValues);
 
     return (
         <div className='chart'>
